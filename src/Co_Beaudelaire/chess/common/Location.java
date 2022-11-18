@@ -34,4 +34,8 @@ public class Location {
         return Objects.hash(columns, rows);
     }
 
+
+    @Override
+    public String toString() {
+        return "" + columns + rows;}
 }

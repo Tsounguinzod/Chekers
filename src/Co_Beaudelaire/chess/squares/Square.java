@@ -29,14 +29,16 @@ public class Square {
 
     @Override
     public String toString() {
-        return "" + squareColor + " ";
+        return
+                //"" + squareColor + " " + isOccupied + " ";
 
-            /*    "Square{" +
+              "Square{" +
                 "squareColor=" + squareColor +
-             //   ", location=" + location +
+              ", location=" + location +
                 ", isOccupied=" + isOccupied +
-                '}';
-            */
+
+                '}' + " ";
+
     }
 
 }

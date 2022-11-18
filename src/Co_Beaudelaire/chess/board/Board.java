@@ -11,11 +11,11 @@ public class Board {
     public Board(){
         for(int i = 0; i< boardSquares.length; i++){
             int column = 0;
-             currentColor = (i%2 == 0)? SquareColor.ROOK : SquareColor.BLACK;
+             currentColor = (i%2 == 0)? SquareColor.WHITE : SquareColor.BLACK;
         for(Columns columns : Columns.values()){
-            Square newSquare = new Square(currentColor, new Location(columns, i));
+            Square newSquare = new Square(currentColor, new Location(columns, i+1));
             boardSquares[i][column] = newSquare;
-            currentColor = (currentColor == SquareColor.BLACK) ? SquareColor.ROOK : SquareColor.BLACK;
+            currentColor = (currentColor == SquareColor.BLACK) ? SquareColor.WHITE : SquareColor.BLACK;
             column++;
         }
         }
